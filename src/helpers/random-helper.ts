@@ -6,9 +6,7 @@ import lodashShuffle from "lodash/shuffle";
 const chance = new Chance();
 const random = new Random(MersenneTwister19937.autoSeed());
 const generateSeeds = (numberOfSeeds: number) => {
-    const result = [...Array(numberOfSeeds + 1).keys()].slice(1);
-
-    return result;
+    return [...Array(numberOfSeeds + 1).keys()].slice(1);
 };
 
 const random1 = (numberOfPicked: number, numberOfSeeds: number) =>

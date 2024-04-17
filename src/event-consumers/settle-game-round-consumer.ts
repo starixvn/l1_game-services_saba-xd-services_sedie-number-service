@@ -3,14 +3,13 @@ import { FinishDraw } from "sc-number-game-base/dist/event-consumers/settle-game
 
 export default class SettleGameRoundConsumer extends EventConsumers.SettleGameRoundConsumer {
     async settleRound() {
-        let roundSettled: any;
         const drawResult = this.gameData.result;
         const drawSettlementResult = this.definition.settle(drawResult);
         const { roundId, drawId, exchangeRates } = this.gameData;
         Object.assign(drawResult, { drawId: drawId, time: new Date() });
         Object.assign(drawSettlementResult, { drawId: drawId });
 
-        roundSettled = await this.roundsRepository.create({
+        const roundSettled = await this.roundsRepository.create({
             id: roundId,
             drawId: drawId,
             result: [drawResult],
