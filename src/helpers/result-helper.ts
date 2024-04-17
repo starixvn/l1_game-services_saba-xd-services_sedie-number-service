@@ -21,7 +21,7 @@ export const generateResult = (finalSeeds: FinalSeeds) => {
 
     const balls: number[] = [];
 
-    ballIndexes.map((i) => {
+    ballIndexes.forEach((i) => {
         balls.push(remainingBalls[i]);
         remainingBalls = generateRemainingBalls(TOTAL_BALLS, balls);
     });
