@@ -2368,13 +2368,10 @@
   resolved "http://npm.lumigame.com/@types/range-parser/-/range-parser-1.2.7.tgz#50ae4353eaaddc04044279812f52c8c65857dbcb"
   integrity sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==
 
-"@types/sc-game-base@^1.0.0-beta.0":
-  version "1.0.0-beta.3"
-  resolved "http://npm.lumigame.com/@types/sc-game-base/-/sc-game-base-1.0.0-beta.3.tgz#f7d5c1740b0018998fded812629728e9c13ed31b"
-  integrity sha512-zzcXo/JxFClQPMXqUDjKd9Dpy2noXAIsJDYuAsE4aW6LUYAn0p6VsjfkHOg/VGbDOlZs/ToAxPaEhB0SYEVrVQ==
-  dependencies:
-    sc-game-base "^5.0.1-beta.24"
-    sc-game-management-client "^0.1.0"
+"@types/sc-game-base@1.0.0-beta.2":
+  version "1.0.0-beta.2"
+  resolved "http://npm.lumigame.com/@types/sc-game-base/-/sc-game-base-1.0.0-beta.2.tgz#25e54c9f435ad92cf9298498c779b2dbaa5d3498"
+  integrity sha512-SruuWQhUHp41/xUJgnPtcnRx6oDHozRdZw2BzBKMegbzJ6Np+BP5bhR9jf3LNSOTYcixvkNxTlIlyiyUwMvaqw==
 
 "@types/sc-game-service-integration-utils@1.0.0-beta.1":
   version "1.0.0-beta.1"
@@ -7062,38 +7059,6 @@ sc-game-base@5.0.1-beta.24:
   version "5.0.1-beta.24"
   resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-5.0.1-beta.24.tgz#7b73eb1c8d298b87be2b6e144c39b6d7886c8e97"
   integrity sha512-S8payLTtPifeoiTnhhrYXptPmx6zifMyHi9cft1qPVPmRoRkA7RnsOl8/LmrhzbXf/S637Lc4KDmYzz5fuQwuw==
-  dependencies:
-    awilix "^8.0.0"
-    axios "^1.0.0"
-    chance "^1.1.7"
-    cors "^2.8.5"
-    cron "^2.0.0"
-    crypto "^1.0.1"
-    crypto-random-string "^5.0.0"
-    express "^4.17.1"
-    helmet "^6.0.0"
-    lodash "^4.17.19"
-    mongoose "^5.9.25"
-    morgan "^1.10.0"
-    nanoid "^5.0.5"
-    openid-client "^5.0.0"
-    prom-client "^11.2.1"
-    random-js "^2.1.0"
-    randomstring "^1.3.0"
-    sc-base-apis "2.0.0"
-    sc-common "1.8.1"
-    sc-game-management-client "^0.1.0"
-    sc-instrument "1.1.1-beta.2"
-    sc-instrument-helper "1.0.0"
-    sc-pf-client-seed "^1.0.1-beta.0"
-    socket.io "^4.5.4"
-    socket.io-msgpack-parser "^3.0.1"
-    socket.io-prom-metrics "^1.0.3"
-
-sc-game-base@^5.0.1-beta.24:
-  version "5.0.1-beta.25"
-  resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-5.0.1-beta.25.tgz#ce917f01b96689a4b11c4060071a7c645ef24ff1"
-  integrity sha512-bgckqkpOl7Kvv/okG2vOBd4BU+9O94jThFPMRj5lnAwYybzRTI293YPqlvTjgbxfIPnD903XsMCV1vA+CfcG9A==
   dependencies:
     awilix "^8.0.0"
     axios "^1.0.0"
