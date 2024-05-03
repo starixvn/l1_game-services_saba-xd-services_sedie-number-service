@@ -1,4 +1,4 @@
-export const TOTAL_BALLS = 80;
+export const TOTAL_BALLS = 60;
 export const BALLS_EACH_ROUND = 4;
 export const SERVER_SEED_SECRET_LENGTH = 32;
 export const BET_CHOICES = {
