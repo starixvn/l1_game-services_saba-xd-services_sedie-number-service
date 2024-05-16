@@ -42,25 +42,42 @@ describe("result helper tests", () => {
     });
 
     describe("getSettlementResult", () => {
-        it("should return expected", () => {
-            // arrange
-            const result = {
-                balls: [1, 2, 3, 4],
-            } as any;
-
+        const testCases = [
+            {
+                result: {
+                    balls: ["1", "2", "3", "4"],
+                },
+                expected: {
+                    odd: false,
+                    even: true,
+                    red4: false,
+                    red3: false,
+                    red2: true,
+                    blue4: false,
+                    blue3: false,
+                },
+            },
+            {
+                result: {
+                    balls: [1, 3, 5, 4],
+                },
+                expected: {
+                    odd: true,
+                    even: false,
+                    red4: false,
+                    red3: false,
+                    red2: false,
+                    blue4: false,
+                    blue3: true,
+                },
+            },
+        ];
+        it.each(testCases)("should return expected", ({ result, expected }) => {
             // act
-            const actual = resultHelper.getSettlementResult(result);
+            const actual = resultHelper.getSettlementResult(result as any);
 
             // assert
-            expect(actual).toEqual({
-                odd: false,
-                even: true,
-                red4: false,
-                red3: false,
-                red2: true,
-                blue4: false,
-                blue3: false,
-            });
+            expect(actual).toEqual(expected);
         });
     });
 });

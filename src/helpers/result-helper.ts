@@ -57,7 +57,7 @@ export const getSettlementResult = (result: DrawResult) => {
 const getTotalReds = (balls: number[]) => {
     let totalReds = 0;
     balls.forEach((ball) => {
-        if (RED_BALLS.includes(ball)) {
+        if (RED_BALLS.includes(+ball)) {
             totalReds++;
         }
     });
