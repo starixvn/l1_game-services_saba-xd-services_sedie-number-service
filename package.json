@@ -25,7 +25,7 @@
         "indent": 4
     },
     "dependencies": {
-        "@rd/numbers-game-probabilities": "1.5.0-beta.1",
+        "@rd/numbers-game-probabilities": "1.6.0",
         "awilix": "^8.0.0",
         "chance": "1.1.6",
         "d3-array": "3.2.0",
@@ -33,8 +33,8 @@
         "lodash": "^4.17.21",
         "mongoose": "^5.9.25",
         "random-js": "^2.1.0",
-        "sc-game-base": "5.0.1-beta.24",
-        "sc-number-game-base": "1.0.1-beta.4"
+        "sc-game-base": "5.1.0",
+        "sc-number-game-base": "1.1.1-beta"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.23.9",
