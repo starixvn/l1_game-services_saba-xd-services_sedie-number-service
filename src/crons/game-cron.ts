@@ -34,4 +34,8 @@ export default class GameCron extends Crons.GameCron {
         this.gameData.playerBetCount = {};
         this.generateRoundData();
     }
+
+    formatNewTurnData() {
+        return { ...super.formatNewTurnData(), roundId: this.gameData.roundId };
+    }
 }

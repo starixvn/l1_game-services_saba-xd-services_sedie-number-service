@@ -149,4 +149,24 @@ describe("GameCron tests", () => {
             expect(provablyFairConsumer.reset).toHaveBeenCalled();
         });
     });
+
+    describe("formatNewTurnData", () => {
+        it("should return expected", () => {
+            // arrange
+            const odds = { odd: 2, even: 2, red3: 2, red4: 2, blue2: 2, blue4: 2, red2: 2 };
+            gameData.gameConfigs = { odds } as any;
+            gameData.roundId = 10;
+            gameData.drawId = 10;
+
+            // act
+            const actual = consumer.formatNewTurnData();
+
+            // assert
+            expect(actual).toEqual({
+                odds,
+                drawId: 10,
+                roundId: 10,
+            });
+        });
+    });
 });
