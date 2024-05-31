@@ -4,7 +4,7 @@ import { ContainerRegistry } from "sc-number-game-base";
 import { InGameConsumer, RoundResultConsumer, SettleGameRoundConsumer } from "./event-consumers";
 import RunningRoundInfoPublisher from "./event-publishers/running-round-info-publisher";
 import { GameStatusPublisher } from "./event-publishers";
-import GameCron from "./crons/game-cron";
+import { Bot, GameCron, ProcessBetQueue } from "./crons";
 
 export default class SeBallContainerRegistry extends ContainerRegistry {
     registerModels() {
@@ -22,7 +22,9 @@ export default class SeBallContainerRegistry extends ContainerRegistry {
     registerCrons() {
         super.registerCrons();
         this.container.register({
+            bot: asClass(Bot).singleton(),
             gameCron: asClass(GameCron).singleton().proxy(),
+            processBetQueue: asClass(ProcessBetQueue).singleton().proxy(),
         });
     }
 
