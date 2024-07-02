@@ -8,7 +8,7 @@ export default {
         placingBets: 20,
         lockingBet: 3,
         showingResult: 4,
-        wholeTurn: 22,
+        wholeTurn: 27,
         startingRound: 4,
     },
     choices: Object.values(BET_CHOICES),
