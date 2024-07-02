@@ -4,8 +4,8 @@ export default {
     id: 1005,
     name: "SeBall1",
     durations: {
-        wholeRound: 26,
-        placingBets: 15,
+        wholeRound: 31,
+        placingBets: 20,
         lockingBet: 3,
         showingResult: 4,
         wholeTurn: 22,
